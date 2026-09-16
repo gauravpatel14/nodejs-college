@@ -4,9 +4,7 @@ function codingScoreCheck(marks, cutoff) {
   return new Promise((res, rej) =>
     setTimeout(
       () =>
-        avg(marks) >= cutoff
-          ? res(avg(marks))
-          : rej("Sorry, you have not cleared the Coding Assessment."),
+        avg(marks) >= cutoff ? res(avg(marks)): rej("Sorry, you have not cleared the Coding Assessment."),
       2000,
     ),
   );
